@@ -145,17 +145,20 @@ btn.forEach(element => {
         element.textContent = "That hurt!"
 
     })
-    element.addEventListener('mousedown', () => {
+    element.addEventListener('mouseup', () => {
         element.textContent = "I'm not a real button"
     })
-    element.addEventListener('mouseup', () => {
+    element.addEventListener('mousedown', () => {
         element.textContent = "WHAT?!"
     })
-    element.addEventListener("online", () => {
-        element.textContent = "Fully Operational"
-    })
-    element.addEventListener("ofline", () => {
-        element.textContent = "System Error"
-    })
+
 })
 
+window.addEventListener("load", () => {
+    body.style.color = "blue";
+})
+
+
+// window.addEventListener("online", () => {
+//     body.style.background = "green";
+// })
